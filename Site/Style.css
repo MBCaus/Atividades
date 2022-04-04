@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    background: black;
+    font-family: monospace;
+}
+
+.header{
+    border-bottom: 3px solid aqua;
+}
+
+.header ul #aqui {
+    font-weight: 800;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo {
+    color: aqua;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.barra {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    padding: 0;
+    align-items: center;
+}
+
+/* Fim do cabeçalho */
+
+/* Começo do banner */
+
+.banner {
+    background-image: url("https://raw.githubusercontent.com/julialima1999/Aula_HTML_CSS/main/imgs/bg-jelly-fish-para-home.png");
+    height: 500px;
+    color: #fff;
+    display: flex;
+}
+
+.banner .container p span {
+    font-weight: 1000;
+}
+
+.banner .container {
+    font-size: 36px;
+    justify-content: center;
+}
+
+.banner .container p {
+    width: 10%;
+}
+
+/* Fim do Banner */
+
+/* Começo do Social */
+
+.social {
+    background-color: beige;
+    display: flex;
+}
+
+.caixa img {
+    width: 170px;
+}
+
+.social .container .caixas {
+    display: flex;
+}
+
+.caixa {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fim do Banner */
+
+/* Inicio Rodape */
+
+.rodape {
+    background-color: #32b9cd;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+}
+
+.rodape .container {
+    justify-content: center;
+}
+
+/* Fim do Rodapé */
+
+/* Inicio do Login */
+
+.header ul #aqui {
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner .container .card {
+    background-color: beige;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    color: darkmagenta;
+    align-items: center;
+    border-radius: 4px;
+    border: darkmagenta solid 2px;
+}
+
+.card h2 {
+    font-size: 30px;
+}
+
+.card h4 {
+    font-size: 16px;
+}
+
+.card input {
+    border: darkmagenta solid 1px;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+}
+
+.card button {
+    height: 28px;
+    width: 70px;
+    margin-top: 25px;
+    background-color: darkmagenta;
+    color: #fff;
+    font: 700 17px monospace;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Fim do Login */
+
+/* Inicio do Cadastro */
+
+.espacamento .container .box {
+    height: 300px;
+    background-color: black;
+}
