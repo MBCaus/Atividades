@@ -1,0 +1,21 @@
+body {
+   display: flex; 
+}
+
+.um {
+    position: relative;
+    height: 40vh;
+    width: 40vw;
+}
+
+.dois {
+    position: relative;
+    height: 40vh;
+    width: 40vw;
+}
+
+.tres {
+    position: relative;
+    height: 20vh;
+    width: 20vw;
+}

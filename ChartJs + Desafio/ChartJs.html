@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="ChartJs.css">
+</head>
+<body>
+    
+    <div>
+        <canvas id="linhas" class="um"></canvas>
+      </div>
+
+      <div>
+        <canvas id="barras" class="dois"></canvas>
+      </div>
+
+      <div>
+        <canvas id="pizza" class="tres"></canvas>
+      </div>
+
+</body>
+
+<script>
+    const horarios = [
+      '12:00',
+      '13:00',
+      '14:00',
+      '15:00',
+      '16:00',
+      '17:00',
+    ];
+
+    const meses = [
+      'Janeiro',
+      'Fevereiro',
+      'Março',
+      'Abril',
+      'Maio',
+      'Junho',
+    ];
+  
+    const primeiro = {
+      labels: horarios,
+      datasets: [{
+        label: 'Temperatura',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [30, 29, 28, 25, 22, 23, 90],
+      },
+      {
+        label: 'Umidade',
+        backgroundColor: 'rgb(0, 150, 255)',
+        borderColor: 'rgb(0, 150, 255)',
+        data: [80, 82, 80, 85, 85, 83,],
+      }]
+    };
+
+    const segundo = {
+      labels: meses,
+      datasets: [{
+        label: 'Temperatura',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: [22, 24, 27, 23, 20, 18, 100],
+      },
+      {
+        label: 'Umidade',
+        backgroundColor: 'rgb(0, 150, 255)',
+        borderColor: 'rgb(0, 150, 255)',
+        data: [90, 89, 93, 87, 88, 82,],
+      }]
+    };
+  
+    const configuracao = {
+      type: 'line',
+      data: primeiro,
+      options: {}
+    };
+
+    const configuracao2 = {
+      type: 'bar',
+      data: segundo,
+      options: {}
+    };
+
+    // Grafico de Doughnut
+
+    const cores = {
+  labels: [
+    'Red',
+    'Blue',
+    'Yellow'
+  ],
+  datasets: [{
+    label: 'Grafico Desafio',
+    data: [300, 50, 100],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)'
+    ],
+    hoverOffset: 4
+  }]
+};
+
+const configuracao3 = {
+  type: 'doughnut',
+  data: cores,
+};
+  </script>
+
+<script>
+    const linha = new Chart(
+      document.getElementById('linhas'),
+      configuracao
+    );
+
+    const barra = new Chart(
+      document.getElementById('barras'),
+      configuracao2
+    );
+
+    const doughnut = new Chart(
+      document.getElementById('pizza'),
+      configuracao3
+    );
+
+    // Grafico de Doughnut
+
+  </script>
+
+</html>
